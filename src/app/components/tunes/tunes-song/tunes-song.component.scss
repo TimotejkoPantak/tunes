@@ -1,0 +1,77 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.tunes-song{
+    color: white;
+    text-align: left;
+    max-width: 24em;
+    margin: 0 auto 2em;
+    position: relative;
+    box-sizing: border-box;
+    background-color: black;
+    border-radius: 0.75em;
+}
+
+.inside{
+    padding: 1.35em 1.75em 1.75em;
+}
+
+h2{
+    font-size: inherit;
+    line-height: 1.5em;
+    margin: 0;
+
+}
+
+.player{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 1.5em;
+    
+}
+
+img{
+    width: 5em;
+    border: 3px solid #fff;
+    border-radius: 0.5em;
+
+}
+
+audio{
+    outline: none;
+    max-width: 14em;
+}
+
+
+audio::-webkit-media-controls-panel{
+    background-color: #fff;
+}
+
+.meta{
+    font-size: 0.75em;
+    font-weight: 800;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, 0.5);
+    padding: 1.5em 2.25em;
+    background: rgb(0,0,0);
+    border-bottom-left-radius: 1em;
+    border-bottom-right-radius: 1em;
+}
+
+
+@media screem and (max-width: 520px) {
+    .player{
+        audio{
+            margin-top: 1.5em;
+            margin-right: 1.5em;
+        }
+
+        flex-direction: column;
+    }
+}
